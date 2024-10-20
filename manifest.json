@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "TradingView URL Modifier",
+  "name": "TradingView & Chartink URL Modifier",
   "version": "5.0",
   "permissions": ["tabs", "activeTab"],
   "content_scripts": [
@@ -10,8 +10,8 @@
     }
   ],
   "action": {
-    "default_icon": "icons/icon.png",
-    "default_title": "TradingView URL Modifier"
+    "default_icon": "icon.png",
+    "default_title": "TradingView & Chartink URL Modifier"
   },
   "background": {
     "service_worker": "background.js"
