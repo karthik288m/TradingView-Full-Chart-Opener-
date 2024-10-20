@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "TradingView URL Modifier",
+  "version": "5.0",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://in.tradingview.com/markets/*", "https://chartink.com/*"], // Added Chartink match
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "TradingView URL Modifier"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
